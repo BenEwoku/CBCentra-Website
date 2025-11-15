@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBCentra - School Management System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 2rem 80px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #229954;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .features, .screenshots {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .screenshot-grid img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 2px solid #e9ecef;
+        }
+        
+        .screenshot-grid img:hover {
+            transform: scale(1.02);
+        }
+        
+        .demo-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .demo-section img, .demo-section video {
+            max-width: 800px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+        }
+        
+        .contact {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whatsapp {
+            color: #25D366;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">CBCentra</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#download">Download</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>School Management Made Easy</h1>
+        <p>Professional desktop application for efficient school administration, student management, and staff records.</p>
+        <a href="#download" class="download-btn">Download Now</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Student Management</h3>
+                    <p>Complete student records, attendance tracking, and academic performance monitoring.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Staff Administration</h3>
+                    <p>Manage teacher profiles, assignments, and payroll information efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Database Integration</h3>
+                    <p>Secure MySQL database with multi-user access and real-time synchronization.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Multi-User Support</h3>
+                    <p>Multiple computers can access the same database simultaneously.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title">Application Screenshots</h2>
+            <div class="screenshot-grid">
+                <!-- REPLACE THESE LINKS WITH YOUR ACTUAL SCREENSHOT LINKS -->
+                <img src="https://github.com/yourusername/CBCentra-source/releases/download/v1.5.0/login-screen.png" alt="CBCentra Login Screen">
+                <img src="https://github.com/yourusername/CBCentra-source/releases/download/v1.5.0/dashboard.png" alt="CBCentra Dashboard">
+                <img src="https://github.com/yourusername/CBCentra-source/releases/download/v1.5.0/student-management.png" alt="Student Management">
+                <img src="https://github.com/yourusername/CBCentra-source/releases/download/v1.5.0/reports.png" alt="Reports Section">
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="section-title">See It In Action</h2>
+            <!-- REPLACE WITH YOUR ACTUAL DEMO LINKS -->
+            <img src="https://github.com/yourusername/CBCentra-source/releases/download/v1.5.0/app-demo.gif" alt="CBCentra Demo">
+            <!-- Optional: Video -->
+            <!-- <video controls>
+                <source src="https://github.com/yourusername/CBCentra-source/releases/download/v1.5.0/tutorial.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="features" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Download CBCentra</h2>
+            <div style="text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Get the latest version of CBCentra School Management System</p>
+                
+                <!-- REPLACE WITH YOUR ACTUAL DOWNLOAD LINK -->
+                <a href="https://github.com/yourusername/CBCentra-source/releases/latest/download/CBCentra_Setup.exe" 
+                   class="download-btn" 
+                   style="font-size: 1.3rem; padding: 20px 40px;">
+                   Download Latest Version
+                </a>
+                
+                <div style="margin-top: 2rem;">
+                    <h3>System Requirements</h3>
+                    <p>Windows 10/11 • MySQL Server • 500MB Free Space</p>
+                    <p style="margin-top: 1rem; color: #666;">
+                        <small>Current: v1.5 | File size: ~325 MB</small>
+                    </p>
+                    
+                    <!-- Optional: Documentation Links -->
+                    <div style="margin-top: 1rem;">
+                        <small>
+                            <a href="https://github.com/yourusername/CBCentra-source/releases/download/v1.5.0/user-manual.pdf" style="color: #3498db;">User Manual</a> | 
+                            <a href="https://github.com/yourusername/CBCentra-source/releases" style="color: #3498db;">All Versions</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get Support</h2>
+            <div class="contact-info">
+                <p><strong>Benjamin: 0774617788</strong></p>
+                <p><span class="whatsapp">WhatsApp: 0757922692</span></p>
+                <p>School Management System Specialist</p>
+                <p style="margin-top: 1rem;">Professional desktop application for schools worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CBCentra School Management System. All rights reserved.</p>
+            <p>Professional desktop application for schools</p>
+        </div>
+    </footer>
+</body>
+</html>
