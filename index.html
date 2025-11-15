@@ -435,69 +435,110 @@
     </section>
 
     <!-- Screenshots Section -->
-<section id="screenshots" class="screenshots">
-    <div class="container">
-        <h2 class="section-title">Application Screenshots</h2>
-        <div class="screenshot-grid">
-            <!-- CORRECTED LINKS: -->
-            <img src="dashboard.PNG" alt="CBCentra Dashboard - Comprehensive overview with analytics">
-            <img src="staff-management.PNG" alt="Staff Management - Teacher and staff administration">
-            <img src="student-management.PNG" alt="Student Management - Complete student records system">
-            <img src="Reports.PNG" alt="Reports & Analytics - Data visualization and insights">
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title">Application Screenshots</h2>
+            <div class="screenshot-grid">
+                <!-- Current 4 images -->
+                <img src="dashboard.PNG" alt="CBCentra Dashboard - Comprehensive overview with analytics">
+                <img src="staff-management.PNG" alt="Staff Management - Teacher and staff administration">
+                <img src="student-management.PNG" alt="Student Management - Complete student records system">
+                <img src="Reports.PNG" alt="Reports & Analytics - Data visualization and insights">
+                
+                <!-- Added 2 more image slots -->
+                <img src="placeholder-image5.jpg" alt="CBCentra Feature - Additional functionality">
+                <img src="placeholder-image6.jpg" alt="CBCentra Feature - Additional functionality">
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Demo Section -->
-<section class="demo-section">
-    <div class="container">
-        <h2 class="section-title">See It In Action</h2>
-        
-        <!-- GIF Demo -->
-        <img src="app-demo.gif" alt="CBCentra Demo - Watch the application in action">
-        
-        <!-- Video Tutorial -->
-        <video controls style="max-width: 800px; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 1rem 0;">
-            <source src="tutorial.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</section>
-
-    <!-- Download Section -->
-<section id="download" class="features" style="background: #f8f9fa;">
-    <div class="container">
-        <h2 class="section-title">Download CBCentra</h2>
-        <div style="text-align: center;">
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Get the latest version of CBCentra School Management System</p>
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="section-title">See It In Action</h2>
             
-            <!-- UPDATED DOWNLOAD LINK -->
-            <a href="https://github.com/BenEwoku/CBCentra-releases/releases/latest/download/CBCentra_Setup.exe" 
-               class="download-btn" 
-               style="font-size: 1.3rem; padding: 20px 40px;">
-               Download Latest Version
-            </a>
-            
-            <div style="margin-top: 2rem;">
-                <h3>System Requirements</h3>
-                <p>Windows 10/11 • MySQL Server • 500MB Free Space</p>
-                <p style="margin-top: 1rem; color: #666;">
-                    <small>Current: v1.5 | File size: ~325 MB</small>
-                </p>
+            <!-- 4 Video Uploads -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div>
+                    <h3>Application Overview</h3>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <source src="overview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 
-                <!-- Optional: Documentation Links -->
-                <div style="margin-top: 1rem;">
-                    <small>
-                        <a href="https://github.com/BenEwoku/CBCentra-source/releases/download/v1.5.0/user-manual.pdf" style="color: #3498db;">User Manual</a> | 
-                        <a href="https://github.com/BenEwoku/CBCentra-source/releases" style="color: #3498db;">All Versions</a>
-                    </small>
+                <div>
+                    <h3>Student Management</h3>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <source src="student-management.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div>
+                    <h3>Staff Administration</h3>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <source src="staff-management.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div>
+                    <h3>Reports & Analytics</h3>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <source src="reports.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-        <!-- Contact Section -->
+    <!-- Download Section -->
+    <section id="download" class="features" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Download CBCentra</h2>
+            <div style="text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Get the latest version of CBCentra School Management System</p>
+                
+                <!-- Main Application Download -->
+                <a href="https://github.com/BenEwoku/CBCentra-releases/releases/latest/download/CBCentra_Setup.exe" 
+                   class="download-btn" 
+                   style="font-size: 1.3rem; padding: 20px 40px; margin-bottom: 1rem;">
+                   Download CBCentra Application
+                </a>
+                
+                <!-- MySQL Installer Download -->
+                <div style="margin-top: 2rem;">
+                    <h3>Required Database</h3>
+                    <p>Download MySQL Installer for database setup</p>
+                    <a href="https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.36.0.msi" 
+                       class="download-btn" 
+                       style="background: #00758f; font-size: 1.1rem; padding: 15px 30px; margin-top: 1rem;">
+                       Download MySQL Installer
+                    </a>
+                </div>
+                
+                <div style="margin-top: 2rem;">
+                    <h3>System Requirements</h3>
+                    <p>Windows 10/11 • MySQL Server • 500MB Free Space</p>
+                    <p style="margin-top: 1rem; color: #666;">
+                        <small>Current: v1.5 | File size: ~325 MB</small>
+                    </p>
+                    
+                    <!-- Optional: Documentation Links -->
+                    <div style="margin-top: 1rem;">
+                        <small>
+                            <a href="https://github.com/BenEwoku/CBCentra-source/releases/download/v1.5.0/user-manual.pdf" style="color: #3498db;">User Manual</a> | 
+                            <a href="https://github.com/BenEwoku/CBCentra-source/releases" style="color: #3498db;">All Versions</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title" style="color: white;">Get in Touch | Get Support</h2>
