@@ -109,21 +109,54 @@
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
         }
         
         .feature-card {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             padding: 2rem;
-            border-radius: 8px;
+            border-radius: 12px;
             text-align: center;
             border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-left-color: #2980b9;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+            text-align: center;
         }
         
         .feature-card h3 {
             color: #2c3e50;
             margin-bottom: 1rem;
+            font-size: 1.3rem;
+            min-height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        
+        .feature-card p {
+            color: #555;
+            line-height: 1.6;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
         }
         
         .screenshot-grid {
@@ -186,6 +219,9 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .nav-links { gap: 1rem; }
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
         }
     </style>
 </head>
@@ -213,23 +249,186 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Powerful Features</h2>
+            <h2 class="section-title">Complete School Management Ecosystem</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; color: #666;">
+                Enterprise-grade school management with powerful administrative controls and real-time monitoring
+            </p>
+            
             <div class="features-grid">
+                <!-- Student Management -->
                 <div class="feature-card">
-                    <h3>Student Management</h3>
-                    <p>Complete student records, attendance tracking, and academic performance monitoring.</p>
+                    <div class="feature-icon">&#128218;</div>
+                    <h3>Complete Student Management</h3>
+                    <p>End-to-end student lifecycle management including admissions, profiles, attendance tracking, 
+                    academic performance monitoring, health records, and comprehensive reporting.</p>
                 </div>
+
+                <!-- Staff & Teacher Management -->
                 <div class="feature-card">
+                    <div class="feature-icon">&#128100;</div>
                     <h3>Staff Administration</h3>
-                    <p>Manage teacher profiles, assignments, and payroll information efficiently.</p>
+                    <p>Complete staff database with profiles, qualifications, assignments, attendance, payroll management, 
+                    performance tracking, and department organization.</p>
                 </div>
+
+                <!-- Academic Management -->
                 <div class="feature-card">
-                    <h3>Database Integration</h3>
-                    <p>Secure MySQL database with multi-user access and real-time synchronization.</p>
+                    <div class="feature-icon">&#128214;</div>
+                    <h3>Academic Management</h3>
+                    <p>Subject management, class organization, timetable scheduling, competency-based curriculum tracking, 
+                    and academic year/term management.</p>
                 </div>
+
+                <!-- Assessment & Grading -->
                 <div class="feature-card">
-                    <h3>Multi-User Support</h3>
-                    <p>Multiple computers can access the same database simultaneously.</p>
+                    <div class="feature-icon">&#128202;</div>
+                    <h3>Comprehensive Assessment System</h3>
+                    <p>Exam management, activities & projects tracking, competency assessment, CBC grading system, 
+                    mark entry, report cards, and performance analytics.</p>
+                </div>
+
+                <!-- Financial Management -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128176;</div>
+                    <h3>Financial Management</h3>
+                    <p>Complete fee management, budget planning, expense tracking, supplier management, payroll processing, 
+                    and financial reporting.</p>
+                </div>
+
+                <!-- Parent & Communication -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128106;</div>
+                    <h3>Parent Engagement</h3>
+                    <p>Parent database management, student-parent relationships, communication system, 
+                    and parent portal integration capabilities.</p>
+                </div>
+
+                <!-- Real-Time Dashboard -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128200;</div>
+                    <h3>Real-Time Dashboard</h3>
+                    <p>Comprehensive overview with school statistics, quick actions, system alerts, 
+                    performance metrics, and customizable widgets for instant insights.</p>
+                </div>
+
+                <!-- User Account Management -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128101;</div>
+                    <h3>User Account Management</h3>
+                    <p>Complete user lifecycle management - create, edit, deactivate accounts, 
+                    password policies, profile management, and bulk user operations.</p>
+                </div>
+
+                <!-- Role-Based Permissions -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128272;</div>
+                    <h3>Role-Based Permissions</h3>
+                    <p>Granular permission system with predefined roles (Admin, Headteacher, Teacher, Secretary, Accountant) 
+                    and custom role creation with precise access controls.</p>
+                </div>
+
+                <!-- Tab Access Control -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128274;</div>
+                    <h3>Tab Access Control</h3>
+                    <p>Fine-grained tab visibility management - control exactly which features each user role can access, 
+                    with real-time permission updates.</p>
+                </div>
+
+                <!-- Individual User Permissions -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128203;</div>
+                    <h3>Individual User Permissions</h3>
+                    <p>Override role permissions for specific users, grant special access, 
+                    and create custom permission sets for unique staff requirements.</p>
+                </div>
+
+                <!-- Audit Trail & Logs -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128269;</div>
+                    <h3>Audit Trail & Logs</h3>
+                    <p>Comprehensive activity monitoring with detailed audit logs, change tracking, 
+                    user action history, and compliance reporting.</p>
+                </div>
+
+                <!-- Login Activity Monitoring -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128273;</div>
+                    <h3>Login Activity Monitoring</h3>
+                    <p>Real-time login tracking, session management, failed login attempts monitoring, 
+                    and security breach detection.</p>
+                </div>
+
+                <!-- Library Management -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128213;</div>
+                    <h3>Library Management</h3>
+                    <p>Book catalog management, categories, borrowing system, inventory tracking, 
+                    and library reports.</p>
+                </div>
+
+                <!-- Health Management -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#127973;</div>
+                    <h3>Health Records</h3>
+                    <p>Sick bay visit tracking, medical conditions database, health records management, 
+                    medical inventory, and administration records.</p>
+                </div>
+
+                <!-- Multi-User System -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128101;</div>
+                    <h3>Multi-User Enterprise System</h3>
+                    <p>Role-based access control, simultaneous multi-computer access, real-time data synchronization, 
+                    and comprehensive user permission management.</p>
+                </div>
+
+                <!-- Database & Security -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128274;</div>
+                    <h3>Secure Database Integration</h3>
+                    <p>Enterprise-grade MySQL database with data encryption, automated backups, 
+                    audit trails, and login activity monitoring.</p>
+                </div>
+
+                <!-- Reporting & Analytics -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128201;</div>
+                    <h3>Advanced Reporting</h3>
+                    <p>Comprehensive analytics, customizable reports, PDF export, data visualization, 
+                    and real-time dashboard overview.</p>
+                </div>
+
+                <!-- Email & Communication -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#9993;</div>
+                    <h3>Integrated Communication</h3>
+                    <p>Built-in email system, notification center, bulk messaging to students, parents, and staff, 
+                    with email spam detection to ensure deliverability.</p>
+                </div>
+
+                <!-- CSV Import Templates -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128190;</div>
+                    <h3>CSV Import Templates</h3>
+                    <p>Bulk data import capabilities with pre-formatted CSV templates for students, staff, parents, and marks. 
+                    Streamline data entry and migration processes.</p>
+                </div>
+
+                <!-- System Settings & Configuration -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#9881;</div>
+                    <h3>System Settings & Configuration</h3>
+                    <p>Centralized configuration management, appearance customization, 
+                    email setup, and system preference management.</p>
+                </div>
+
+                <!-- Logging & Diagnostics -->
+                <div class="feature-card">
+                    <div class="feature-icon">&#128195;</div>
+                    <h3>Logging & Diagnostics</h3>
+                    <p>Comprehensive system logging, error tracking, performance monitoring, 
+                    and diagnostic tools for system maintenance.</p>
                 </div>
             </div>
         </div>
@@ -301,9 +500,10 @@
         <div class="container">
             <h2 class="section-title" style="color: white;">Get Support</h2>
             <div class="contact-info">
-                <p><strong>Benjamin: 0774617788</strong></p>
+                <p><strong>Ben Ewoku: 0774617788</strong></p>
                 <p><span class="whatsapp">WhatsApp: 0757922692</span></p>
-                <p>School Management System Specialist</p>
+                <p style="margin-top: 1rem;"><strong>Email:</strong> bewoku14@outlook.com | beneky14@gmail.com</p>
+                <p>School Management System Specialist | Data Analyst | Statistician</p>
                 <p style="margin-top: 1rem;">Professional desktop application for schools worldwide</p>
             </div>
         </div>
@@ -312,9 +512,14 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 CBCentra School Management System. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> CBCentra School Management System. All rights reserved.</p>
             <p>Professional desktop application for schools</p>
         </div>
     </footer>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
