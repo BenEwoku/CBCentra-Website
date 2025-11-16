@@ -235,6 +235,22 @@
             color: #2c3e50;
             text-align: center;
         }
+
+        .download-section-box {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .csv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
         
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
@@ -459,13 +475,10 @@
         <div class="container">
             <h2 class="section-title">Application Screenshots</h2>
             <div class="screenshot-grid">
-                <!-- Current 4 images -->
                 <img src="dashboard.PNG" alt="CBCentra Dashboard - Comprehensive overview with analytics">
                 <img src="staff-management.PNG" alt="Staff Management - Teacher and staff administration">
                 <img src="student-management.PNG" alt="Student Management - Complete student records system">
                 <img src="Reports.PNG" alt="Reports & Analytics - Data visualization and insights">
-                
-                <!-- Added 2 more image slots -->
                 <img src="placeholder-image5.jpg" alt="CBCentra Feature - Additional functionality">
                 <img src="placeholder-image6.jpg" alt="CBCentra Feature - Additional functionality">
             </div>
@@ -528,7 +541,7 @@
                 </div>
             </div>
             
-            <!-- Your existing tutorial video -->
+            <!-- Complete Tutorial -->
             <h3>Complete Tutorial</h3>
             <video controls style="max-width: 800px; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 1rem 0;">
                 <source src="tutorial.mp4" type="video/mp4">
@@ -548,7 +561,7 @@
                 <a href="https://github.com/BenEwoku/CBCentra-releases/releases/latest/download/CBCentra_Setup.exe" 
                    class="download-btn" 
                    style="font-size: 1.3rem; padding: 20px 40px; margin-bottom: 1rem;">
-                   Download CBCentra Application Demo
+                   Download CBCentra v1.0.0
                 </a>
                 
                 <!-- MySQL Installer Download -->
@@ -561,19 +574,88 @@
                        Download MySQL Installer (v8.0.41.0)
                     </a>
                 </div>
+
+                <!-- Database Setup Files -->
+                <div class="download-section-box">
+                    <h3 style="margin-bottom: 1.5rem;">Database Setup & Migration</h3>
+                    
+                    <!-- New Installation -->
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: #27ae60;">For New Installations</h4>
+                        <p style="margin-bottom: 1rem;">Complete database with all tables and seed data</p>
+                        <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/school_management.sql" 
+                           class="download-btn" 
+                           style="background: #27ae60; font-size: 1rem; padding: 12px 25px;">
+                           school_management.sql
+                        </a>
+                    </div>
+
+                    <!-- Migration Scripts -->
+                    <div style="margin-bottom: 0;">
+                        <h4 style="color: #e67e22;">For System Updates (Existing Installations)</h4>
+                        <p style="margin-bottom: 1rem;">Apply these migration scripts if you're upgrading from previous versions</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/migration_v0_to_v1.sql" 
+                               class="download-btn" 
+                               style="background: #e67e22; font-size: 0.9rem; padding: 10px 20px;">
+                               migration_v0_to_v1.sql
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSV Import Templates -->
+                <div class="download-section-box">
+                    <h3 style="margin-bottom: 1rem;">CSV Import Templates</h3>
+                    <p style="margin-bottom: 1.5rem; color: #666;">Download sample CSV templates for bulk data import</p>
+                    
+                    <div class="csv-grid">
+                        <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/students_template.csv" 
+                           class="download-btn" 
+                           style="background: #3498db; font-size: 0.9rem; padding: 10px 15px;">
+                           Students Template
+                        </a>
+                        <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/teachers_template.csv" 
+                           class="download-btn" 
+                           style="background: #3498db; font-size: 0.9rem; padding: 10px 15px;">
+                           Teachers Template
+                        </a>
+                        <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/parents_template.csv" 
+                           class="download-btn" 
+                           style="background: #3498db; font-size: 0.9rem; padding: 10px 15px;">
+                           Parents Template
+                        </a>
+                        <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/marks_template.csv" 
+                           class="download-btn" 
+                           style="background: #3498db; font-size: 0.9rem; padding: 10px 15px;">
+                           Marks Template
+                        </a>
+                        <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/subjects_template.csv" 
+                           class="download-btn" 
+                           style="background: #95a5a6; font-size: 0.9rem; padding: 10px 15px;">
+                           Subjects Template
+                        </a>
+                        <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/classes_template.csv" 
+                           class="download-btn" 
+                           style="background: #95a5a6; font-size: 0.9rem; padding: 10px 15px;">
+                           Classes Template
+                        </a>
+                    </div>
+                </div>
                 
                 <div style="margin-top: 2rem;">
                     <h3>System Requirements</h3>
-                    <p>Windows 10/11 • MySQL Server • 500MB Free Space</p>
+                    <p>Windows 10/11 • MySQL Server 8.0+ • 500MB Free Space</p>
                     <p style="margin-top: 1rem; color: #666;">
-                        <small>Current: v1.5 | File size: ~325 MB</small>
+                        <small>Current: v1.0.0 | File size: ~325 MB</small>
                     </p>
                     
-                    <!-- Optional: Documentation Links -->
-                    <div style="margin-top: 1rem;">
+                    <!-- Documentation Links -->
+                    <div style="margin-top: 1.5rem;">
                         <small>
-                            <a href="https://github.com/BenEwoku/CBCentra-source/releases/download/v1.5.0/user-manual.pdf" style="color: #3498db;">User Manual</a> | 
-                            <a href="https://github.com/BenEwoku/CBCentra-releases/releases" style="color: #3498db;">All Versions</a>
+                            <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/CBCentra_User_Manual.pdf" style="color: #3498db; margin: 0 10px;">User Manual</a> | 
+                            <a href="https://github.com/BenEwoku/CBCentra-releases/releases/download/v1.0.0/CBCentra_Technical_Documentation.pdf" style="color: #3498db; margin: 0 10px;">Technical Documentation</a> | 
+                            <a href="https://github.com/BenEwoku/CBCentra-releases/releases" style="color: #3498db; margin: 0 10px;">All Versions</a>
                         </small>
                     </div>
                 </div>
