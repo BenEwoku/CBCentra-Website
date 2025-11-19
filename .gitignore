@@ -1,0 +1,38 @@
+# Website repository - Web files + Media + Documents
+# Cache and build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment files
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build outputs
+_site/
+build/
+dist/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Logs
+*.log
+
+# EXCLUDE source code executables
+*.exe
+*.msi
+*.dmg
