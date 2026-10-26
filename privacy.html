@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | CBCentra School Management System</title>
+<meta name="description" content="How CBCentra School Management System accesses, uses, stores and protects Google user data.">
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --surface: #ffffff;
+    --text: #1d2430;
+    --muted: #5a6472;
+    --rule: #dcdfe4;
+    --accent: #1f4e79;
+    --note-bg: #eef3f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12171e;
+      --surface: #181e27;
+      --text: #e6e9ee;
+      --muted: #a2abb8;
+      --rule: #2b333e;
+      --accent: #8db8e3;
+      --note-bg: #1a2430;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  .page {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+  }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  header p { margin: 0 0 0.25rem; color: var(--muted); font-size: 0.95rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0.25rem 0 0.75rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.5rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .meta { color: var(--muted); font-size: 0.95rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .note {
+    background: var(--note-bg);
+    border-left: 4px solid var(--accent);
+    padding: 0.9rem 1.1rem;
+    margin: 1.25rem 0;
+  }
+  .note p { margin: 0; }
+  code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.92em; }
+  footer { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 1.25rem; }
+</style>
+</head>
+<body>
+<main class="page">
+
+<header>
+  <p><a href="./">CBCentra School Management System</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 26 October 2026</p>
+</header>
+
+<p>CBCentra School Management System ("CBCentra") is a desktop application developed and maintained by Centra Holdings SMC Ltd, Kampala, Uganda. This policy explains what Google user data CBCentra accesses when a school connects a Gmail account, why it does so, and how that data is stored and protected.</p>
+
+<div class="note">
+  <p>CBCentra runs on the school's own computers and local network. Centra Holdings does not operate a server that receives, stores or processes your Gmail data.</p>
+</div>
+
+<h2>What CBCentra is</h2>
+<p>CBCentra is installed on computers at the school. One designated computer, the email server machine, connects a single Gmail account that the school chooses. Other computers on the school network then use that connection through the school's own database. The Gmail account is normally the school's official mailbox.</p>
+
+<h2>Google user data we access</h2>
+<p>When an authorised administrator signs in to Google from CBCentra, the app requests these permissions:</p>
+<ul>
+  <li><code>gmail.send</code>: to send emails (for example fee notices, announcements and report notifications) from the school's address.</li>
+  <li><code>gmail.readonly</code>: to read messages in the connected mailbox so that incoming mail and replies can be shown inside CBCentra.</li>
+  <li><code>gmail.modify</code>: to update message state, such as marking messages as read, so the in-app inbox matches the mailbox.</li>
+</ul>
+<p>CBCentra also reads the email address of the connected account, so that it can display which mailbox is signed in.</p>
+
+<h2>How we use this data</h2>
+<p>We use Google user data only to provide the email features the school sees inside CBCentra: sending messages, showing conversations and attachments, and keeping read status in step with Gmail. We do not use it for advertising, profiling, or any purpose unrelated to those features.</p>
+<p>CBCentra's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Where the data is stored</h2>
+<ul>
+  <li><strong>Authorisation token.</strong> After sign-in, Google issues a token that lets CBCentra act on the mailbox. It is stored in the school's own MySQL database, and a backup copy may be kept in the application's local files on the server machine. It is never sent to Centra Holdings.</li>
+  <li><strong>Email content.</strong> Messages, conversation details and attachments that CBCentra displays or sends are stored in the school's own database and file storage on its local network.</li>
+</ul>
+<p>The school controls that database and the computers it runs on, and is responsible for securing them, for example with access controls, regular backups and user accounts for staff.</p>
+
+<h2>Sharing and disclosure</h2>
+<p>We do not sell Google user data. We do not share it with third parties, transfer it to other companies, or use it to train artificial intelligence or machine learning models. The only parties who can see the data are the school's own authorised CBCentra users. Data may be disclosed if the school is required to do so by law.</p>
+
+<h2>Human access</h2>
+<p>Centra Holdings staff do not read a school's emails. If the school asks for technical support, access to data happens only with the school's permission and only as far as needed to fix the problem.</p>
+
+<h2>Retention and deletion</h2>
+<p>The school decides how long emails and tokens are kept, because they live in the school's own systems. An administrator can disconnect Gmail at any time with the Revoke button in CBCentra's email settings. This removes the stored token from the database and from the local files on the server machine. Messages already stored in CBCentra's database stay there until the school deletes them.</p>
+<p>You can also withdraw access directly from Google at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2>Security</h2>
+<p>Access to Gmail is limited to the single server machine that completed sign-in. Other computers cannot start the Google sign-in flow and only use the stored authorisation. Communication with Google's servers uses HTTPS.</p>
+
+<h2>Changes to this policy</h2>
+<p>If CBCentra's handling of Google user data changes, we will update this page and its date. Changes that affect how Google data is used will be reflected here before they take effect.</p>
+
+<h2>Contact</h2>
+<p>For questions about this policy or about data handled by CBCentra, contact Centra Holdings SMC Ltd at <a href="mailto:beneky14@gmail.com">beneky14@gmail.com</a>.</p>
+
+<footer>
+  <p class="meta">&copy; 2026 Centra Holdings SMC Ltd, Kampala, Uganda. <a href="./">Back to the CBCentra home page</a></p>
+</footer>
+
+</main>
+</body>
+</html>
